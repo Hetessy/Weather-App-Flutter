@@ -121,10 +121,13 @@ class _HomePageState extends State<HomePage> {
                       Padding(
                         padding: EdgeInsets.only(
                           top: size.height * 0.03,
+                          left: size.width * 0.01,
+                          right: size.width * 0.01,
                         ),
                         child: Align(
                           child: Text(
                             cityName,
+                            textAlign: TextAlign.center,
                             style: GoogleFonts.questrial(
                               color: isDarkMode ? Colors.white : Colors.black,
                               fontSize: size.height * 0.06,
@@ -214,10 +217,13 @@ class _HomePageState extends State<HomePage> {
                           ? Padding(
                               padding: EdgeInsets.only(
                                 top: size.height * 0.005,
+                                left: size.width * 0.01,
+                                right: size.width * 0.01,
                               ),
                               child: Align(
                                 child: Text(
                                   '${_weather[1].hour.first['condition']['text']}',
+                                  textAlign: TextAlign.center,
                                   style: GoogleFonts.questrial(
                                     color: isDarkMode
                                         ? Colors.white54
